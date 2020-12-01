@@ -7,6 +7,8 @@ export type RatingPropsType = {
     onClick: (value: ratingValueType) => void
 }
 
+export const RatingContainer = React.memo(Rating);
+
 export function Rating(props: RatingPropsType) {
     console.log("UncontrolledRating rendering")
     return (

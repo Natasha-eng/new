@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Accordion} from "./components/Accordion/Accordion";
 import {Rating, ratingValueType} from "./components/Rating/Rating";
-import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
-import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
-import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
-import {OnOff} from "./components/OnOff/OnOff";
+import {UncontrolledAccordionContainer} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledRatingContainer} from "./components/UncontrolledRating/UncontrolledRating";
+import {OnOffContainer} from "./components/OnOff/OnOff";
+import {UncontrolledOnOffContainer} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 
 
 function App(props: any) {
@@ -13,13 +12,15 @@ function App(props: any) {
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false);
     let [switchOn, setSwitchOn] = useState<boolean>(false);
 
+
+
     return (
         <div className={"App"}>
-            <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
-            <OnOff on={switchOn} onChange={setSwitchOn}/>
-            <UncontrolledAccordion titleValue={"Menu"}/>
-            <UncontrolledAccordion titleValue={"Users"}/>
-            <UncontrolledRating onChange={setRatingValue}/>
+            <UncontrolledOnOffContainer onChange={setSwitchOn}/> {switchOn.toString()}
+            <OnOffContainer on={switchOn} onChange={setSwitchOn}/>
+            <UncontrolledAccordionContainer titleValue={"Menu"}/>
+            <UncontrolledAccordionContainer titleValue={"Users"}/>
+            <UncontrolledRatingContainer onChange={setRatingValue}/>
            {/* <Accordion titleValue={"Users"} setAccordionCollapsed={setAccordionCollapsed}
                        collapsed={accordionCollapsed}  />*/}
 

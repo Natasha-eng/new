@@ -7,10 +7,14 @@ type RatingPropsType = {
     onChange: (value:ratingValueType) =>void
 }
 
+export const UncontrolledRatingContainer = React.memo(UncontrolledRating);
+
 export function UncontrolledRating(props: RatingPropsType) {
     console.log("UncontrolledRating rendering")
 
     let [value, setValue] = useState<ratingValueType>(props.defaultValue ? props.defaultValue : 0);
+
+
 
     return (
         <div>

@@ -5,6 +5,8 @@ type AccordionPropsType = {
     titleValue: string
 }
 
+export const UncontrolledAccordionContainer = React.memo(UncontrolledAccordion);
+
 export function UncontrolledAccordion(props: AccordionPropsType) {
     console.log("Accordion rendering")
 

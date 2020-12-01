@@ -12,6 +12,7 @@ type SelectPropsType = {
     items: Array<ItemType>
 }
 
+export const SelectContainer = React.memo(Select);
 
 export function Select(props: SelectPropsType) {
     const [active, setActive] = useState<boolean>(false);

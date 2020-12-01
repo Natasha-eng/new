@@ -5,6 +5,8 @@ export type OnOffPropsType = {
     on: boolean
 }
 
+export const OnOffContainer = React.memo(OnOff);
+
 export function OnOff(props: OnOffPropsType) {
 
 
