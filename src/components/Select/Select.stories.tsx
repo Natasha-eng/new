@@ -33,13 +33,3 @@ export const WithoutValue = () => {
     </>
 }
 
-
-/*
-export const OnChangeCityMode = () => {
-
-    const [value, changeValue] = useState<string>("1")
-    return <Select items={[{title: "Minsk", value: "1"}, {title: "Moscow", value: "2"},
-        {title: "Kiev", value: "1"}]} value={value}
-                   onChange={() => changeValue(value)}/>
-}
-*/

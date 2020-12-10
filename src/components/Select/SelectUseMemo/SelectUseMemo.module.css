@@ -1,0 +1,31 @@
+.select span.main {
+    border: 1px solid black;
+    width: 200px;
+    height: 20px;
+    display: inline-block;
+}
+
+.items {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid black;
+    top: 20px;
+}
+
+.item.selected {
+    background-color: lightblue;
+    color: darkblue;
+    width: 189px;
+    height: 20px;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    position: relative;
+}
+
+.filteredSelect {
+    display: flex;
+}
