@@ -7,7 +7,6 @@ type PropsType = {
 }
 
 
-
 export const Clock: React.FC<PropsType> = (props) => {
     const [date, setDate] = useState(new Date());
 
@@ -26,11 +25,11 @@ export const Clock: React.FC<PropsType> = (props) => {
 
     switch (props.mode) {
         case 'analog':
-            view = <AnalogClockView date = {date}/>
+            view = <AnalogClockView date={date}/>
             break;
         case 'digital':
         default:
-            view = <DigitalClockView date = {date}/>
+            view = <DigitalClockView date={date}/>
     }
 
     return <div>
